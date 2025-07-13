@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border_property</title>
+
+    <style>
+           
+           .box{
+                 height: 125px; 
+                 width: 135px;
+                 text-align: center;
+                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 25px ; font-style: normal; 
+                text-decoration: underline; text-decoration-style: double; text-decoration-color: rgb(207, 86, 86);
+                color: palevioletred;    
+
+                
+
+                 }
+          
+            #box1{
+                  background-color: rgba(11, 11,22,0.8);
+                  margin:0px 0px 35px 45px; padding: 50px;
+                  border: 10px dashed rgb(180, 180, 40); /* " border " property add border to the content . it also add extra size that'll be the size of border.  */
+                  border-radius: 15px;  /* " border-radius " property give curvinees at the corner */
+
+                  box-sizing: content-box; /* " box-sizing " adjust the total given size of the conten;*/
+                                             
+                  /* content-box is a default value of box-sizing property*/
+            }
+
+            #box2{
+                  background-color: rgb(228, 228, 137);
+                  margin:65px 0px 0px 80px ; 
+                  border: 10px double rgb(27, 190, 120) ;
+                  border-radius: 25px;
+                   box-sizing: border-box; /* border-box set the total size after padding and border applied , by decreasing the dimensions of the content    */
+            }
+    </style>
+</head>
+<body>
+    
+         <div id="box1" class="box">box 1</div>
+
+         <div id="box2" class="box">box 2</div>
+
+</body>
+</html>
