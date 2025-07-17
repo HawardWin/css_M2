@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
 
-    <style>
+    <style> /* "Display" property help to define or change the property of lnline and Block element */
             *{
                 margin: 0px; padding: 0px;
             }
-           #box{
+           .box{
             color: yellow; background-color: black;
             height: 105px; width: 150px;
             margin-left: 10%;
@@ -18,13 +18,18 @@
            h1{
               margin: 0px; padding: 0px;
               background-color: rgb(186, 135, 17);
-              display: inline;
+              display: inline;                       /* Here, 'h1' is block element which takes space of a line yet content don't need that space . */
            }
 
-           span{
+           #b{
             color: antiquewhite;
-            background-color: greenyellow;
-            display: none;
+            visibility: hidden;
+            background-color: greenyellow; 
+            display: inline;
+           }
+
+           #b1{
+               display: none;  /* like this */
            }
 
     </style>
@@ -32,7 +37,9 @@
 <body>
     
      <h1>pf</h1>
-      <div id="box">This is <span>Box1</span></div>
+      <div class="box">This is <span id="b">Box</span>1.</div>  <!-- You will see "Box" is invisible but take its space when you see webpage. It look weird , so we should use "None" of Display property which help to delete the space which is taken by these invisible content.  -->
+<br>
+       <div class="box">This is <span id="b1">Box</span>1.</div> <!-- Kindly look at #b1 in style tag -->
 
 
 </body>
