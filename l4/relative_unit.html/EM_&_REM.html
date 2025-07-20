@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM & REM ( Relative unit )</title>
+            <!-- "EM & REM" are relative units which define the font-size relative to 'parent text' and text in 'root element' respectively . -->
+    <style>
+            
+        html{
+            font-size: 200px;
+        }
+            body{ height: 250px; width: 300px;
+                font-size: 100px;
+            }
+
+            span{ display: inline;
+                font-size: 0.8rem;}    /* " Em " relative unit which customize the font size of 'child text' relative to 'parent text'  . * "1rem = Font size in root element" * */
+        section{
+                font-size: 50px;
+                line-height: 20px;
+        }
+         
+        div{
+             font-size: 0.4em;      /* " REM " relative unit which customize the font size of 'child text' relative to text in 'root element (html)' .  "1em = Font size in parent element" .  */
+        } 
+    </style>
+</head>
+
+<body>  GOD AS <span>Human king</span> 
+     <section> <p>RAM</p>
+              <div> he is unmortal GOD who born as prince of kingdom of human world . 
+             
+                         </div> 
+                         </section>
+</body>
+</html>
