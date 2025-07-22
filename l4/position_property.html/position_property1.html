@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <style>     *{
+                    margin: 0; padding: 0;
+    }
+                
+                .box{
+                    color: rgb(18, 134, 230);
+                    text-align: center; 
+                    text-decoration: overline;
+                    text-decoration-style: double;
+                    text-decoration-color: whitesmoke;
+                    background-color: rgb(106, 225, 158);
+
+                    height: 120px;
+                    width: 100px;
+                    display: inline-block;
+                }
+                                                /* "Position-property" help to define where to put content.
+                                                    Its types are :- Static , Relative , Absolutec , Fixed , sticky; */
+                #static{
+                        position: static;         /* "Static" position property is default property which automatically  set its position according normal document flow . */
+                }
+                
+                #relative{
+                     position:relative;     /* "Relative" position property is same as static property but we can define its position where to put it from its defalute position */
+                    top: 15px;
+                    left: 150px;
+                    
+                }
+                 
+               #absolute{  
+                background-color: chartreuse; 
+                          position: absolute;   /* "Absolute" position property used to define content position according to the parent elelment or viewport(if there's no any parent element) .  */
+                          top: 260px;
+                          left: 60px;
+                     
+               }
+
+               #fixed{
+                        position:fixed ;    /* "Fixed" position property is same as absolute property but its fixed and work like overlay in editing . */
+                        top: 160px;
+                        left: 150px; 
+                        
+               }
+
+               #sticky{ margin: 0px;
+                        position: sticky;   /* "Sticky" position property has mixed property of relative and fixed. It work as relative first and fixed when scorlling at limit */
+                        background-color: brown;
+                        top: 20px;
+                        left: 360px;
+                        z-index: -1;
+                        
+               }
+     </style>
+</head>
+<body>  
+    <h1 style="margin: 0; padding: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem non rem beatae consectetur pariatur amet quibusdam? Necessitatibus atque eos quidem libero dolorem maxime maiores molestiae hic cupiditate corporis temporibus porro, repellat, laborum nesciunt numquam expedita distinctio iste alias dolor. Quisquam id sed alias quos ipsam porro totam ratione ea harum laboriosam tempora, sint corrupti, quasi commodi dolor dolorem omnis, <div id="sticky" class="box">sticky</div> adipisci nemo provident voluptatem. Iure illum vel quos corrupti laborum architecto totam vero, pariatur provident eius quibusdam, exercitationem consectetur velit earum vitae est praesentium? Dolore commodi minima quasi ipsum ipsa et, officiis cumque temporibus numquam debitis magnam mollitia dolorum totam, eos dolores a eveniet. Aspernatur modi dolore velit distinctio consequatur commodi itaque magni delectus, omnis quisquam labore repellat molestiae eum est dolor rerum! Architecto eius dicta, aperiam natus inventore perspiciatis ex id consequuntur voluptatibus ducimus nihil vel incidunt dolorum distinctio, autem neque ad omnis. Porro, facilis consectetur dolor vero dolorum perferendis praesentium officia quisquam, itaque asperiores quas omnis ea excepturi. Necessitatibus?</h1>
+
+     <div id="static" class="box">static</div>
+     <div id="relative" class="box">relative</div> 
+     <div id="fixed" class="box">fixed</div>
+     <div id="absolute" class="box">absolute</div>
+    
+    
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet provident eos, explicabo maiores pariatur labore ex excepturi architecto fugiat distinctio expedita dolore repellendus perferendis quasi. Accusantium atque, consectetur eius praesentium quia quae minus pariatur voluptates laboriosam maxime alias animi dolores consequuntur dolorem, qui officia, necessitatibus veritatis est! Facere reprehenderit consectetur, animi maxime ullam, eveniet expedita, excepturi nostrum magnam iste officiis voluptatibus magni rem asperiores iure. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sed at deleniti sunt illum nostrum doloribus, facere accusamus eos ad laborum voluptatem pariatur eaque dolorum iure fuga architecto nihil itaque quo? Necessitatibus nostrum dignissimos odit impedit. Sunt, facere culpa omnis quis maxime ipsa quos ipsam? Illo dolorum laudantium architecto temporibus quam adipisci assumenda, molestias nam ab velit inventore distinctio! Dolore temporibus doloribus aperiam omnis unde repellendus eius eaque maiores praesentium dolorum eligendi dignissimos enim ab cupiditate, eveniet placeat non? Possimus voluptate, laudantium repellendus consequatur reiciendis, unde harum saepe facilis culpa rerum deserunt! Totam, aut repudiandae! Quibusdam sequi debitis sint nihil omnis earum incidunt doloribus quas, culpa vel officia fugiat autem, praesentium, a optio rerum quia asperiores corrupti. Facere vero ipsum repudiandae corporis sed, doloribus debitis doloremque quia natus ipsam distinctio porro eum omnis minima quisquam sunt. Explicabo ut facilis esse minus, nemo minima! Eveniet voluptatem exercitationem veritatis, et aut, ullam nemo accusamus, harum voluptatibus odit nulla adipisci illo incidunt dicta facere sequi facilis deserunt aliquid quibusdam temporibus reprehenderit. Ex ipsum nesciunt nostrum tempora sint quia explicabo, vitae, provident id temporibus voluptatum incidunt suscipit ipsam optio unde ut velit eveniet pariatur! Nostrum, dolorum odit! Eaque at laborum quaerat harum quod impedit dolorum inventore labore itaque blanditiis, nobis vel sequi corrupti obcaecati voluptatum consequatur sunt? Doloribus dolor atque magnam, nemo qui alias nisi animi? Aliquid quod delectus laudantium inventore, dolores nostrum quis atque dolorem qui officiis ea facere iste! Dolorem in impedit cupiditate. Quaerat at perspiciatis inventore dolores eius non sunt neque laborum quisquam doloribus quas excepturi nobis, vitae laboriosam debitis voluptates nostrum voluptatum ipsum commodi in itaque distinctio suscipit dicta. Dolorum, quidem ab non esse veniam doloremque! Dignissimos quibusdam non porro unde aspernatur enim, aliquid atque doloremque qui vero deleniti recusandae. Nobis omnis odio exercitationem minima accusamus. Architecto, qui reiciendis illum repellat ex alias quidem ab atque quasi facere libero accusamus optio autem animi ratione veniam nam harum voluptates mollitia aliquid iure totam! Temporibus quaerat dolorem possimus, obcaecati molestias voluptas facilis iure repellendus voluptatem, dignissimos, quam nihil laudantium rerum accusantium maiores atque sapiente? Et quia magni voluptatum in aspernatur deserunt dicta sunt nobis illo ut doloribus, consequuntur ipsa soluta non ea reiciendis quis omnis. Nam nesciunt distinctio, adipisci ratione optio suscipit rerum natus neque deserunt aperiam, mollitia reprehenderit earum pariatur, quis minima atque! Repellendus iure eius nam reprehenderit architecto dolorem voluptas delectus quaerat fuga necessitatibus, voluptate repudiandae ea? Explicabo at, suscipit tempora impedit magni, odio doloremque non natus veniam eaque dolorum eum! Voluptas esse laborum suscipit distinctio doloremque voluptates saepe accusamus nihil adipisci nisi voluptatibus sunt laudantium aliquam excepturi beatae rem iusto vel autem, quaerat consequatur aut? Asperiores eveniet dolores voluptate vitae doloribus soluta sapiente dolore inventore, quisquam, placeat ratione? Quasi et vel nam facere assumenda! Deserunt quaerat, blanditiis, atque suscipit totam dolore temporibus architecto accusamus ab quos ipsum eveniet impedit in. Ab ut officia, assumenda accusamus ratione eveniet amet at qui, unde id ducimus veniam laborum ipsam rem nihil hic non accusantium libero natus deserunt, nisi nostrum? Numquam quae accusantium repellat itaque est, obcaecati vel praesentium debitis error distinctio officia et beatae laborum quia laboriosam hic perspiciatis. Sint veniam quasi sit numquam! Soluta ducimus nostrum aliquid, quisquam veniam odit obcaecati deleniti, consequatur debitis omnis suscipit quas accusamus culpa repellat molestias quaerat a aspernatur accusantium. Excepturi dignissimos voluptatum accusamus illum nesciunt veniam aperiam consequuntur fuga impedit reprehenderit error earum ipsum omnis laborum, animi, sunt aut aliquam incidunt provident, magnam dicta veritatis suscipit! Magni cupiditate veritatis officia, sed quisquam modi omnis. Odit facilis temporibus optio reprehenderit nesciunt. Ducimus eius dicta doloremque cumque, magni cum consequuntur, sint vero accusantium tenetur odio exercitationem est ullam, mollitia numquam voluptates veniam rem iure nihil omnis sapiente? Nihil sapiente corporis sit aperiam voluptatum, quasi dolorem laboriosam amet blanditiis qui vero possimus tempore fugit dicta odit iusto veniam accusantium dolores, atque placeat at facilis. Omnis dolorum a dolor officiis ipsam ad culpa, iure molestias vel numquam non aperiam velit mollitia porro. Sapiente culpa reiciendis animi. Reprehenderit fuga dicta ipsam ab repudiandae, sequi quidem, atque voluptatem quibusdam corrupti tempore fugit optio harum non? Laboriosam vero illo doloribus corrupti dolorum ipsum deleniti tempore totam, eos officia architecto unde! Tenetur labore aperiam nostrum libero illo voluptas incidunt neque illum nihil officiis fugit, distinctio perferendis error, perspiciatis fuga dolorem assumenda quia. Nostrum impedit quod cum delectus, eos repellat quidem cupiditate harum atque culpa! Praesentium dolores, aliquam cum nihil maiores officia esse explicabo minima quos non repellat est nobis voluptates perspiciatis reiciendis illo vero nesciunt accusantium soluta, rem at quasi. Commodi fuga pariatur deleniti dignissimos odio quisquam accusamus quo earum debitis, labore velit nobis assumenda iste asperiores dolor est aliquid impedit deserunt, voluptates soluta natus officiis harum. Repudiandae veritatis architecto officia temporibus? Nesciunt eius sit, officia veritatis atque perspiciatis nam? Odit repellendus tempora illum iste qui alias officia ut est? Voluptates, optio, voluptatum sapiente reiciendis debitis quo, cum autem aspernatur amet similique atque beatae mollitia exercitationem nemo consequuntur vitae molestiae. Dignissimos saepe assumenda pariatur odit blanditiis impedit amet repudiandae esse ex magnam asperiores veritatis ut iusto officia corrupti odio a ad obcaecati cumque, aperiam voluptates est fugit quod. Vero dicta totam ipsam corporis temporibus ab atque earum ut, rem voluptatibus eligendi iure illo quia fugiat quas ad dolorem aut, expedita dignissimos! Officia impedit consequuntur dolorum voluptate deserunt! Ducimus magnam, eum suscipit voluptate id vitae facilis eius, officiis voluptates provident ratione! Vel quasi laborum autem ab. Ut laboriosam nisi accusamus doloribus error ullam in magnam esse rem autem repellat, libero neque cumque, dolor quasi omnis quaerat. Provident qui tempora, recusandae blanditiis rerum illo totam minus unde aliquam accusantium necessitatibus reprehenderit velit incidunt assumenda, expedita aperiam ipsam et ab quos vitae cupiditate accusamus. Tempore dicta voluptatibus veritatis debitis ipsam sunt repellat praesentium sapiente a quis adipisci doloribus placeat, dolorum, animi tempora. Iste suscipit dolore, voluptatibus omnis, iusto quibusdam minus delectus magni ipsam, repellendus nam asperiores perferendis sequi quae eum nemo veritatis explicabo! Officia, quam sapiente natus asperiores, nobis, aspernatur neque at omnis suscipit nostrum alias consectetur necessitatibus porro. Adipisci, laudantium consectetur atque rem ea ullam!
+
+         
+     </p>
+</body>
+</html>
