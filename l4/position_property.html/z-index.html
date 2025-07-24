@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+
+    <style>
+
+        .box{
+                    color: rgb(194, 90, 242);
+                    text-align: center; 
+                    text-decoration: underline;
+                    text-decoration-style: double;
+                    text-decoration-color: rgb(234, 231, 26);
+                    background-color: rgb(49, 50, 49);
+
+                    height: 120px;
+                    width: 100px;
+                }
+
+                /* "Z-index" act like overlay position (editing) . It value are like:- (-ve ,0 ,+ve ).
+                   It will act according to its value. */
+
+        #static{
+                    position: static;
+                   z-index: -4;
+        }
+
+        #relative{
+                    position: relative;
+                    top: 70px;
+                    left: 75px;
+                    z-index: -9;
+                    background-color: chartreuse;
+                
+        }
+
+        #absolute{
+                   position: absolute;
+                   top: 350px;
+                   left: 60px;
+                background-color: cornflowerblue;
+                z-index: 1;
+            }
+
+        #fixed{ z-index: 8;
+                  position: fixed;
+                  top: 150px;
+                  left: 120px
+                           }
+
+     
+        
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae quibusdam, veritatis quos earum distinctio dolor, veniam facere ducimus perspiciatis quae accusantium odit voluptas, sit tenetur! Praesentium perferendis exercitationem nihil porro recusandae, optio, nemo tempora repudiandae explicabo veniam blanditiis nostrum cum reiciendis qui unde eligendi esse minima quia sint in. Iusto ab corrupti doloremque tempora voluptas. Possimus quisquam minima cumque nostrum earum, architecto fuga nihil aliquam quam impedit, at amet assumenda dolor asperiores sapiente expedita, sequi vitae aut. Labore ea iure a ad quas, qui nostrum dolorum voluptatum distinctio nam quo aliquid ipsum voluptatibus porro cupiditate! Harum, eius ea ipsum dignissimos molestias deserunt placeat distinctio? Nostrum, distinctio dolor!</p>
+
+    <div id="static" class="box">static</div>
+     <div id="relative" class="box">relative</div> 
+     <div id="fixed" class="box">fixed</div>
+     <div id="absolute" class="box">absolute</div>
+
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat soluta suscipit dolorem dolore vero quidem reiciendis consequuntur nam dolorum tempore, optio, facilis quibusdam placeat maxime nisi? Animi ipsum excepturi officia est laudantium dolores, blanditiis corrupti ut nostrum vero velit provident accusantium consectetur? Omnis laboriosam sed nostrum harum voluptas ipsam assumenda eveniet facere repellat reprehenderit, nulla animi asperiores molestiae ex labore ad necessitatibus unde fuga sunt doloremque error? Dolor accusamus iste explicabo minima sequi exercitationem vitae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. In reprehenderit, accusamus fugiat fuga similique commodi ducimus, placeat repellat porro nostrum molestiae maiores maxime ipsam impedit temporibus optio unde harum? Illo animi incidunt quae non, tenetur debitis nihil, voluptates dolorum quam consectetur blanditiis, sapiente maiores aliquam atque consequatur minus. Voluptatibus, itaque!
+
+     </p>
+
+     
+</body>
+</html>
