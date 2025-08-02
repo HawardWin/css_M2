@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox direction (Column)</title>
+</head>
+ <style>
+            .container{ background-color: darkgrey;
+                        height: 750px;
+                        width: 700px;
+                        border: 3px solid black;
+
+                        display: flex;
+                        flex-direction: column;
+                         
+
+            }
+
+            h1{
+                     text-align: center;
+                     color: chartreuse;
+            }
+
+            .box{ margin: 5 px; padding: 9px; 
+                 height: 100px;
+                 width: 90px;
+                 border: 2px solid black;
+                 text-align: center;
+
+            }
+
+            #box_1{
+                   color: whitesmoke;
+                   background-color: cadetblue;
+                  
+            }
+
+            #box_2{
+                  color: azure;
+                  background-color: burlywood;
+            }
+            
+            #box_3{
+                 color: beige;
+                 background-color: rgb(237, 137, 66);
+            }
+
+             #box_4{
+                 color: white;
+                 background-color: rgb(191, 237, 66);
+            }
+
+             #box_5{
+                 color: white;
+                 background-color: rgb(66, 237, 191);
+            }
+
+            
+
+    </style>
+</head>
+<body>    
+        <h1> Flex Box </h1> 
+            <div class="container">     
+            <div id="box_1" class="box">Box 1</div>
+            <div id="box_2"  class="box">Box 2</div>
+            <div id="box_3"  class="box">Box 3</div>
+            <div id="box_4"  class="box">Box 4</div>
+            <div id="box_5"  class="box">Box 5</div>
+        </div>
+    
+</body>
+</html>
