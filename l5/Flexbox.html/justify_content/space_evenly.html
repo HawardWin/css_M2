@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Evenly (Justify-content)</title>
+
+     <style>
+           
+            h2{ color: chocolate; 
+                text-align: center;}
+
+            .container{
+                       height: 750px;
+                       width: 700px;
+                       background-color: cadetblue;
+                       border: 5px solid black;
+                        
+                       display: flex;
+                 justify-content: space-evenly;
+                 
+           } 
+
+           .box{ margin: 3px;
+                 height: 50px;
+                 width: 80px;
+                 color: beige;
+                 border: 3px solid rgb(29, 28, 28);
+                 
+            }
+
+           #box1{ text-align: center;
+                 background-color: chartreuse;
+                  
+           }
+           #box2{ text-align: center;
+                 background-color: rgb(52, 210, 99);
+                  }
+            #box3{ text-align: center;
+                 background-color: rgb(241, 238, 79);
+                  }
+            #box4{ text-align: center;
+                 background-color: rgb(102, 52, 210);
+                  }
+            #box5{ text-align: center;
+                 background-color: rgb(210, 52, 194);
+                  }
+
+
+    </style>
+</head>
+<body> 
+       <h2>Flex Box Container</h2>
+      <div class="container">
+         <div id="box1" class="box">Box 1</div>
+          <div id="box2" class="box">Box 2</div>
+           <div id="box3" class="box">Box 3</div>
+            <div id="box4" class="box">Box 4</div>
+             <div id="box5" class="box">Box 5</div>
+             
+              
+      </div>   
+</body>
+</html>
